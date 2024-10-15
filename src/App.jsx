@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="flex">
-      <Sidebar isCollapsed={isCollapsed} />
+      <Sidebar isCollapsed={isCollapsed} toggleCollapse={handleSidebarToggle} />
       <div className="w-full">
         <Header onSidebarToggle={handleSidebarToggle} />
       </div>
