@@ -11,7 +11,8 @@ export default {
         primary: "#14b8a6",
         secondary: "#64748b",
         dark: "#0f172a",
-        code: "#282c34",
+        sidebar: "#343a40",
+        link: "#c2c7d0",
       },
       screens: {
         "2xl": "1320px",
