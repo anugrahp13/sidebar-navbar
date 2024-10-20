@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BiCartDownload, BiCategory } from "react-icons/bi";
 import { BsBoxSeam } from "react-icons/bs";
-import { FaChevronDown, FaChevronUp, FaCog, FaHome } from "react-icons/fa";
+import { FaChevronDown, FaChevronLeft, FaCog, FaHome } from "react-icons/fa";
 import { FaDatabase, FaCartShopping } from "react-icons/fa6";
 import { GrCurrency, GrDocumentStore } from "react-icons/gr";
 import { HiDocument } from "react-icons/hi2";
@@ -17,11 +17,11 @@ export const Sidebar = ({ isCollapsed }) => {
 
   return (
     <div
-      className={`${
-        isCollapsed ? "w-[4.2rem]" : "min-w-60"
-      } flex flex-col min-h-screen bg-sidebar dark:bg-white shadow-md text-white font-semibold dark:text-gray-800 text-[15px] transition-all duration-500 ease-in-out`}>
+      className={`sidebar-container ${
+        isCollapsed ? "w-[68px]" : "w-96"
+      } flex flex-col h-screen transition-all duration-700 ease-in-out `}>
       {/* Logo and Title */}
-      <div className="flex shadow-sm py-3 px-2">
+      <div className="flex bg-sidebar dark:bg-white border-b border-gray-600 py-3 px-2">
         {isCollapsed ? (
           <div className="flex justify-center items-center">
             <img
@@ -37,12 +37,11 @@ export const Sidebar = ({ isCollapsed }) => {
               alt="Logo"
               className="max-h-8 lg:max-h-7 ml-3 rounded-full"
             />
-            <span>Anugrah Prastyo</span>
+            <span className="font-light text-white">Anugrah Prastyo</span>
           </div>
         )}
       </div>
-
-      <nav className="flex flex-col justify-between h-full bg-sidebar dark:bg-white px-2 my-4">
+      <nav className="flex flex-col justify-between h-full bg-sidebar dark:bg-white px-2 py-4">
         {/* Menu Items */}
         <ul className="flex-grow flex flex-col items-start gap-2">
           {/* Dashboard */}
@@ -76,9 +75,9 @@ export const Sidebar = ({ isCollapsed }) => {
               {!isCollapsed && (
                 <div className="absolute right-4">
                   {activeMenu === "managements" ? (
-                    <FaChevronUp />
-                  ) : (
                     <FaChevronDown />
+                  ) : (
+                    <FaChevronLeft />
                   )}
                 </div>
               )}
@@ -161,9 +160,9 @@ export const Sidebar = ({ isCollapsed }) => {
               {!isCollapsed && (
                 <div className="absolute right-4">
                   {activeMenu === "report" ? (
-                    <FaChevronUp />
-                  ) : (
                     <FaChevronDown />
+                  ) : (
+                    <FaChevronLeft />
                   )}
                 </div>
               )}
