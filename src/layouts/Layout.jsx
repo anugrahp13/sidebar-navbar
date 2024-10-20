@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
           isCollapsed={isCollapsed}
           toggleCollapse={handleSidebarToggle}
         />
-        <div className="w-full grig justify-between">
+        <div className="w-full justify-between">
           <Header onSidebarToggle={handleSidebarToggle} />
           {children}
           <Outlet />
