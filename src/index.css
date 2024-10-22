@@ -7,3 +7,54 @@
 body {
   font-family: "Quicksand", sans-serif;
 }
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 10px;
+    border: 2px solid #282c34;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #282c34;
+    border-radius: 10px;
+  }
+}
+
+.sidebar {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.sidebar-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.dropdown-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sidebar-mobile {
+  transition: width 0.3s;
+}
+
+.sidebar-collapsed {
+  width: 68px; /* Adjust to the desired collapsed width */
+}
+
+.menu-icon {
+  cursor: pointer;
+}
