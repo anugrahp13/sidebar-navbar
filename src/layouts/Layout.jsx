@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
     <>
       <div className="flex">
         <Sidebar isCollapsed={isSidebarCollapsed} />
-        <div className="flex flex-col w-full justify-between">
+        <div className="flex flex-col h-screen w-full justify-between">
           <Header onToggleSidebar={toggleSidebar} />
           {children}
           <Outlet />
