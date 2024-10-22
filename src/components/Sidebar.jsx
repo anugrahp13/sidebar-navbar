@@ -27,7 +27,7 @@ export const Sidebar = ({ isCollapsed }) => {
               isCollapsed ? "space-x-0" : "space-x-3"
             }`}>
             <img
-              src="../../public/image/avatar/Logo.png"
+              src="/image/avatar/Logo.png"
               alt="Logo"
               className="h-9 rounded-full"
             />
