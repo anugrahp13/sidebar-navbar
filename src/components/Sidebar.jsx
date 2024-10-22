@@ -101,7 +101,9 @@ export const Sidebar = ({ isCollapsed }) => {
                       data-tooltip-id="itemsCategory-tooltip"
                       data-tooltip-content="Items Category">
                       <BiCategory className="text-lg" />
-                      {!isCollapsed && <Link to={"#"}>Items Category</Link>}
+                      {!isCollapsed && (
+                        <Link to={"/items-category"}>Items Category</Link>
+                      )}
                       <Tooltip id="itemsCategory-tooltip" place="right" />
                     </li>
                   </ul>
@@ -206,7 +208,7 @@ export const Sidebar = ({ isCollapsed }) => {
               data-tooltip-content="Settings">
               <FaCog className="text-xl" />
               {!isCollapsed && (
-                <Link to={"#"} className="flex-grow text-left">
+                <Link to={"/settings"} className="flex-grow text-left">
                   Settings
                 </Link>
               )}
