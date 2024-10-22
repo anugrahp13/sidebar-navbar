@@ -91,7 +91,7 @@ export const Header = ({ isCollapsed, onToggleSidebar }) => {
               </span>
             </button>
             <img
-              src="../../public/image/avatar/avatar.png"
+              src="/image/avatar/avatar.png"
               alt=""
               className="w-6 h-6 border-1 border-gray-500 hover:shadow-lg rounded-full cursor-pointer"
               onClick={handleMenuToggle}
@@ -161,7 +161,7 @@ export const Header = ({ isCollapsed, onToggleSidebar }) => {
             onClick={handleSidebarClick}
             className="flex items-center border-b border-gray-700 dark:border-gray-300 py-3 px-2 gap-3">
             <img
-              src="../../public/image/avatar/Logo.png"
+              src="/image/avatar/Logo.png"
               alt="Logo"
               className="max-h-8 lg:max-h-7 ml-3 rounded-full"
             />
