@@ -33,7 +33,7 @@ export const Sidebar = ({ isCollapsed }) => {
             />
             {!isCollapsed && (
               <span className="font-medium text-white dark:text-gray-700">
-                Anugrah Prastyo
+                Sidebar App
               </span>
             )}
           </Link>

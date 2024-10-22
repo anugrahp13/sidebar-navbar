@@ -166,7 +166,7 @@ export const Header = ({ isCollapsed, onToggleSidebar }) => {
               className="max-h-8 lg:max-h-7 ml-3 rounded-full"
             />
             <span className="font-medium text-white dark:text-gray-700">
-              Anugrah Prastyo
+              Sidebar App
             </span>
           </Link>
           <nav className="flex flex-col justify-between h-full bg-sidebar dark:bg-white py-3 px-2">
