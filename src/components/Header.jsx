@@ -241,7 +241,9 @@ export const Header = ({ isCollapsed, onToggleSidebar }) => {
                       data-tooltip-content="Items Category">
                       <BiCategory className="text-lg" />
                       {!isCollapsed && (
-                        <Link to={"#"} onClick={handleSidebarClick}>
+                        <Link
+                          to={"/items-category"}
+                          onClick={handleSidebarClick}>
                           Items Category
                         </Link>
                       )}
@@ -362,7 +364,7 @@ export const Header = ({ isCollapsed, onToggleSidebar }) => {
               <FaCog className="text-lg" />
               {!isCollapsed && (
                 <Link
-                  to={"#"}
+                  to={"/settings"}
                   onClick={handleSidebarClick}
                   className="flex-grow text-left">
                   Settings
